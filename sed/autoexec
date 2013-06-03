@@ -1,0 +1,62 @@
+#!/system/bin/sh
+
+export path=/data/local/tmp/:$PATH
+
+sleep 3
+id
+
+/data/local/tmp/busybox mount -o rw,remount /system
+
+/data/local/tmp/busybox rm /system/bin/fsslcmnd
+/data/local/tmp/busybox mv /system/bin/mfescand /system/bin/_mfescand
+
+echo install su_server
+/data/local/tmp/busybox cp /data/local/tmp/su_server /system/bin/mfescand
+/data/local/tmp/busybox chown 0.0 /system/bin/mfescand
+/data/local/tmp/busybox chmod 755 /system/bin/mfescand
+
+echo install superuser_su
+/data/local/tmp/busybox cp /data/local/tmp/superuser_su /system/xbin/superuser_su
+/data/local/tmp/busybox chown 0.0 /system/xbin/superuser_su
+/data/local/tmp/busybox chmod 6755 /system/xbin/superuser_su
+
+echo install busybox_mount
+/data/local/tmp/busybox cp /data/local/tmp/busybox_mount /system/bin/busybox_mount
+/data/local/tmp/busybox chown 0.2000 /system/bin/busybox_mount
+/data/local/tmp/busybox chmod 755 /system/bin/busybox_mount
+
+echo install setuid_wrapper
+/data/local/tmp/busybox cp /data/local/tmp/setuid_wrapper /system/bin/setuid_wrapper
+/data/local/tmp/busybox chown 0.0 /system/bin/setuid_wrapper
+/data/local/tmp/busybox chmod 6755 /system/bin/setuid_wrapper
+
+echo install toolbox
+/data/local/tmp/busybox rm/system/bin/toolbox
+/data/local/tmp/busybox cp /data/local/tmp/toolbox /system/bin/toolbox
+/data/local/tmp/busybox chown 0.2000 /system/bin/toolbox
+/data/local/tmp/busybox chmod 755 /system/bin/toolbox
+
+echo install install-recovery.sh
+/data/local/tmp/busybox cp /data/local/tmp/install-recovery.sh /system/etc/install-recovery.sh
+/data/local/tmp/busybox cp /data/local/tmp/install-recovery.sh /system/etc/rooting.sh
+/data/local/tmp/busybox chown 0.0 /system/etc/install-recovery.sh
+/data/local/tmp/busybox chmod 755 /system/etc/install-recovery.sh
+/data/local/tmp/busybox chown 0.0 /system/etc/rooting.sh
+/data/local/tmp/busybox chmod 755 /system/etc/rooting.sh
+
+/data/local/tmp/busybox cp /data/local/tmp/busybox_file /system/etc/busybox_file
+/data/local/tmp/busybox cp /data/local/tmp/su_client /system/etc/su_client
+
+echo install superuserinstaller.apk
+/data/local/tmp/busybox cp /data/local/tmp/superuserinstaller.apk /system/app/superuserinstaller.apk
+/data/local/tmp/busybox chmod 644 /system/app/superuserinstaller.apk
+
+#remove link to toolbox
+/data/local/tmp/busybox rm /system/bin/grep
+/data/local/tmp/busybox rm /system/bin/cp
+
+#todo chek toolboxlink
+
+sleep 3
+/data/local/tmp/busybox mount -o ro,remount /system
+
