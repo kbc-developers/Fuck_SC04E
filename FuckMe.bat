@@ -3,20 +3,20 @@ cls
 echo ====================================================
 echo  Fuck for SC04E  By KBC
 echo      Thank you for virifi,fi01_IS01
-echo このツールは、
-echo  fi01_IS01さんのrun_root_shell
-echo  virifiさんのsu_server
-echo を利用しています。(KBCメンバはただ遊んでただけ）
-echo
-echo 本ツールによるRoot化による不具合などについては
-echo 各Tool作者に質問してはいけない。KBCメンバに質問したらヌッ（ry
-echo
-echo つーか、こんな端末買うならHTC ONEとか買えよ。
-echo 上記を理解し自己責任にて実行できる方のみFuckしろ。
-echo 
-echo ここで中止する場合、DOS窓を閉じるか、
-echo Ctrl+Cを押した後、Yを押して中止してください
-echo At Your Own Risk！Fuck!
+echo ���̃c�[���́A
+echo  fi01_IS01�����run_root_shell
+echo  virifi�����su_server
+echo �𗘗p���Ă��܂��B(KBC�����o�͂����V��ł������j
+echo.
+echo �{�c�[���ɂ��Root���ɂ��s��Ȃǂɂ��Ă�
+echo �eTool��҂Ɏ��₵�Ă͂����Ȃ��BKBC�����o�Ɏ��₵����k�b�iry
+echo.
+echo �[���A����Ȓ[�������Ȃ�HTC ONE�Ƃ�������B
+echo ��L�𗝉������ȐӔC�ɂĎ��s�ł�����̂�Fuck����B
+echo.
+echo �����Œ��~����ꍇ�ADOS������邩�A
+echo Ctrl+C����������AY�������Ē��~���Ă�������
+echo At Your Own Risk�IFuck!
 echo ====================================================
 pause
 
@@ -26,7 +26,7 @@ echo --------------------------------------
 adb wait-for-device
 
 echo --------------------------------------
-echo Push ont The Bitch
+echo Push on The Bitch!
 echo --------------------------------------
 echo busybox
 	adb push sed/busybox /data/local/tmp/
@@ -84,7 +84,7 @@ echo --------------------------------------
 pause
 adb shell /data/local/tmp/run_autoexec
 echo --------------------------------------
-echo 全て無かったことにする。
+echo �S�Ė����������Ƃɂ����Ⴄ�B
 echo --------------------------------------
 adb shell rm /data/local/tmp/busybox
 adb shell rm /data/local/tmp/install_backdoor
@@ -107,7 +107,7 @@ adb shell rm /data/local/tmp/SGS3RootingApp.apk
 adb shell rm /data/local/tmp/superuserinstaller.apk
 
 echo --------------------------------------
-echo 正直すまんかった。
+echo �������܂񂩂����B
 echo --------------------------------------
 pause
 adb reboot
