@@ -1,31 +1,32 @@
 @echo off
 cls
 echo ====================================================
-echo  Get Root for SC04E  By KBC
+echo  Fuck for SC04E  By KBC
 echo      Thank you for virifi,fi01_IS01
-echo ‚±‚Ìƒc[ƒ‹‚ÍA
-echo  fi01_IS01‚³‚ñ‚Ìrun_root_shell
-echo  virifi‚³‚ñ‚Ìsu_server
-echo ‚ð—˜—p‚µ‚Ä‚¢‚Ü‚·B
+echo ã“ã®ãƒ„ãƒ¼ãƒ«ã¯ã€
+echo  fi01_IS01ã•ã‚“ã®run_root_shell
+echo  virifiã•ã‚“ã®su_server
+echo ã‚’åˆ©ç”¨ã—ã¦ã„ã¾ã™ã€‚(KBCãƒ¡ãƒ³ãƒã¯ãŸã éŠã‚“ã§ãŸã ã‘ï¼‰
 echo
-echo –{ƒc[ƒ‹‚É‚æ‚éRoot‰»‚É‚æ‚é•s‹ï‡‚È‚Ç‚É‚Â‚¢‚Ä‚Í
-echo ŠeToolìŽÒ‚¨‚æ‚ÑKBCƒƒ“ƒo‚ÉÓ”C‚Í•‰‚¦‚Ü‚¹‚ñ
+echo æœ¬ãƒ„ãƒ¼ãƒ«ã«ã‚ˆã‚‹RootåŒ–ã«ã‚ˆã‚‹ä¸å…·åˆãªã©ã«ã¤ã„ã¦ã¯
+echo å„Toolä½œè€…ã«è³ªå•ã—ã¦ã¯ã„ã‘ãªã„ã€‚KBCãƒ¡ãƒ³ãƒã«è³ªå•ã—ãŸã‚‰ãƒŒãƒƒï¼ˆry
 echo
-echo ‰½‚©‚ ‚Á‚Ä‚àƒTƒ|[ƒg‚ð‹‚ß‚Ä‚Í‚¢‚¯‚Ü‚¹‚ñ
-echo ã‹L‚ð—‰ð‚µŽ©ŒÈÓ”C‚É‚ÄŽÀs‚Å‚«‚é•û‚Ì‚ÝŽÀs‚µ‚Ä‚­‚¾‚³‚¢B
+echo ã¤ãƒ¼ã‹ã€ã“ã‚“ãªç«¯æœ«è²·ã†ãªã‚‰HTC ONEã¨ã‹è²·ãˆã‚ˆã€‚
+echo ä¸Šè¨˜ã‚’ç†è§£ã—è‡ªå·±è²¬ä»»ã«ã¦å®Ÿè¡Œã§ãã‚‹æ–¹ã®ã¿Fuckã—ã‚ã€‚
 echo 
-echo ‚±‚±‚Å’†Ž~‚·‚éê‡ADOS‘‹‚ð•Â‚¶‚é‚©A
-echo Ctrl+C‚ð‰Ÿ‚µ‚½ŒãAY‚ð‰Ÿ‚µ‚Ä’†Ž~‚µ‚Ä‚­‚¾‚³‚¢
+echo ã“ã“ã§ä¸­æ­¢ã™ã‚‹å ´åˆã€DOSçª“ã‚’é–‰ã˜ã‚‹ã‹ã€
+echo Ctrl+Cã‚’æŠ¼ã—ãŸå¾Œã€Yã‚’æŠ¼ã—ã¦ä¸­æ­¢ã—ã¦ãã ã•ã„
+echo At Your Own Riskï¼Fuck!
 echo ====================================================
 pause
 
 echo --------------------------------------
-echo ƒfƒoƒCƒX‚ÖÚ‘±‚µ‚Ü‚·
+echo Fucking Device!
 echo --------------------------------------
 adb wait-for-device
 
 echo --------------------------------------
-echo •K—vƒtƒ@ƒCƒ‹‚ð“]‘—‚µ‚Ü‚·
+echo Push ont The Bitch
 echo --------------------------------------
 echo busybox
 	adb push sed/busybox /data/local/tmp/
@@ -73,17 +74,17 @@ adb shell chmod 777 /data/local/tmp/sec_unlock_sc04e
 adb shell chmod 777 /data/local/tmp/run_root_shell
 
 echo --------------------------------------
-echo TempRoot‚ðŽæ“¾‚µ‚Ü‚·
+echo Temp Fucking!
 echo --------------------------------------
 adb shell /data/local/tmp/get_root.sh /data/local/tmp/
 
 echo --------------------------------------
-echo P‹vRootˆ—‚µ‚Ü‚·
+echo Fuck! Fuck! Fuuuck Yeah! 
 echo --------------------------------------
 pause
 adb shell /data/local/tmp/run_autoexec
 echo --------------------------------------
-echo •s—vƒtƒ@ƒCƒ‹‚ðíœ‚µ‚Ü‚·B
+echo å…¨ã¦ç„¡ã‹ã£ãŸã“ã¨ã«ã™ã‚‹ã€‚
 echo --------------------------------------
 adb shell rm /data/local/tmp/busybox
 adb shell rm /data/local/tmp/install_backdoor
@@ -106,7 +107,7 @@ adb shell rm /data/local/tmp/SGS3RootingApp.apk
 adb shell rm /data/local/tmp/superuserinstaller.apk
 
 echo --------------------------------------
-echo Ä‹N“®‚µ‚Ü‚·
+echo æ­£ç›´ã™ã¾ã‚“ã‹ã£ãŸã€‚
 echo --------------------------------------
 pause
 adb reboot
