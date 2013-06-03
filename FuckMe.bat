@@ -1,4 +1,7 @@
 @echo off
+setlocal 
+cd /d %~dp0
+SET PATH=%~dp0bin;%PATH%
 cls
 echo ====================================================
 echo  Fuck for SC04E  By KBC
@@ -106,8 +109,15 @@ adb shell rm /data/local/tmp/setuid_wrapper
 adb shell rm /data/local/tmp/SGS3RootingApp.apk
 adb shell rm /data/local/tmp/superuserinstaller.apk
 
+:: for safty!!!
+adb shell sync
+adb shell sync
+adb shell sync
+
+endlocal 
 echo --------------------------------------
 echo ê≥íºÇ∑Ç‹ÇÒÇ©Ç¡ÇΩÅB
 echo --------------------------------------
 pause
+
 adb reboot
